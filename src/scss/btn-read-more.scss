@@ -1,0 +1,42 @@
+@import 'vars.scss';
+
+.btn-read-more {
+  display: flex;
+  background: none;
+  border: none;
+  margin-bottom: 16px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  height: 24px;
+  cursor: pointer;
+
+  &:hover .btn-read-more__text {
+    opacity: 0.7;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/read-more-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 7px 10px;
+    margin-right: 8px;
+    transition: transform 0.5s;
+  }
+
+  &__text {
+    color: #1B1C21;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+  }
+}
+
+.read-more-block {
+  margin-left: 32px;
+}

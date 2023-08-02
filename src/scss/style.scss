@@ -1,0 +1,74 @@
+@import 'normalize.css';
+@import 'header';
+@import 'page-title';
+@import 'btn.scss';
+@import 'nav-menu.scss';
+@import 'main-content.scss';
+@import 'btn-read-more.scss';
+@import 'block-title';
+@import 'footer.scss';
+@import 'price-block';
+@import 'sidebar';
+@import 'main';
+@import 'sidebar-footer';
+@import 'modal-feedback';
+@import 'modal-call';
+@import 'swiper-block';
+@import 'overlay.scss';
+@import 'repair-block';
+@import 'price-section';
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+li, ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font: inherit;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+.body {
+  font-family: "TT Lakes", sans-serif;
+  font-weight: 400;
+  height: fit-content;
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: $bgColor;
+  color: $textColor;
+  overflow-x: hidden;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+

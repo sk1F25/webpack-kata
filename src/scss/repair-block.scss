@@ -1,0 +1,107 @@
+@import 'vars';
+
+.repair-block {
+  overflow: hidden;
+  padding-bottom: 24px;
+
+  .repair-list {
+
+    &--extended {
+      max-height: 400px !important;
+    }
+
+    &__item {
+      display: flex;
+      flex: 0 0 auto;
+      width: 240px;
+      height: 160px;
+      border-radius: 6px;
+      border: 1px solid #EAEAEA;
+      background: #FFF;
+      align-items: flex-start;
+      align-content: space-between;
+      box-sizing: border-box;
+      padding: 16px;
+
+      .item-title {
+        color: #1B1C21;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.2px;
+      };
+
+      .btn-arrow {
+        align-self: flex-end;
+        margin-left: auto;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+      padding-left: 24px;
+      max-height: 175px;
+      max-width: 800px;
+      gap: 16px 24px;
+
+      transition: max-height 0.5s linear;
+    }
+
+    @media screen and (min-width: 1120px) {
+      gap: 16px 32px;
+      overflow: hidden;
+      max-width: 100%;
+      padding-left: 32px;
+    }
+  }
+
+  .repair-pagination {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+
+    @media (min-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .repair-list__item, .repair-list__slide {
+    width: 224px !important;
+  }
+
+  .repair-list__slide {
+    margin-right: 0 !important;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .repair-list__slide {
+    margin-right: 0 !important;
+  }
+
+  .repair-list__item, .repair-list__slide {
+    width: 240px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .repair-swiper {
+    margin: 0 !important;
+    padding: 16px !important;
+    width: 100%;
+    height: auto;
+  }
+
+  .repair-list__item, .repair-list__slide {
+    width: 240px !important;
+    margin-right: -10px !important;
+  }
+
+  .repair-list {
+    gap: 16px 24px;
+  }
+}

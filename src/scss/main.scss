@@ -1,0 +1,9 @@
+@import 'vars';
+
+.main {
+  display: block;
+
+  @media screen and (min-width: 1120px) {
+    margin-left: 306px;
+  }
+}

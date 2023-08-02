@@ -1,0 +1,70 @@
+@import 'vars.scss';
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+  padding-bottom: 32px;
+
+  @media screen and (min-width: 767px) {
+    flex-direction: row;
+    gap: 48px;
+  }
+
+  &-side {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @media screen and (min-width: 767px) {
+      padding-left: 24px;
+      padding-right: 0;
+      width: 50%;
+    }
+
+    @media screen and (min-width: 1120px) {
+      padding-left: 32px;
+      padding-right: 0;
+    }
+  }
+
+  &__text {
+    max-height: 80px;
+    transition: max-height 0.5s linear;
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    color: #1B1C21;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.2px;
+
+    overflow: hidden;
+
+    @media screen and (min-width: 620px) {
+      max-height: 160px;
+      line-height: 20px;
+    }
+
+    &--extended {
+      max-height: 400px;
+    }
+  }
+
+  img {
+    display: block;
+    margin-right: auto;
+
+    @media screen and (min-width: 767px) {
+      align-self: flex-start;
+      margin-left: auto;
+      margin-right: 0;
+      max-width: 50%;
+      border-radius: 8px;
+    }
+
+    @media screen and (min-width: 1440px) {
+    }
+  }
+}

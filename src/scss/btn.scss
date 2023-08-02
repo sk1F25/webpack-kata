@@ -1,0 +1,141 @@
+@import 'vars.scss';
+
+.btn-form {
+  display: flex;
+  gap: 8px;
+  padding: 4px 12px;
+  cursor: pointer;
+
+  color: white;
+  text-align: right;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 200% */
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+
+  width: auto;
+  height: 32px;
+  border-radius: 16px;
+  background: $accentColor;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: 500ms;
+    filter: drop-shadow(2px 2px 4px rgba(255, 62, 121, 0.5));
+  }
+
+  &__icon {
+    display: inline-block;
+    z-index: 2;
+    width: 16px;
+    height: 16px;
+    background: url(../img/go.svg) no-repeat 50% 50%;
+    filter: brightness(0) invert(1);
+  }
+}
+
+.btn-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #FF3E79;
+  transition: all 0.3s;
+
+  .btn__icon--arrow {
+    width: 40px;
+    height: 40px;
+    background: url(../img/go.svg) no-repeat 50% 50%;
+  }
+
+  &:hover {
+    background-color: #FF3E79;
+  }
+
+  &:hover .btn__icon--arrow {
+    filter: brightness(0) invert(1);
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &__label {
+    display: inline-block;
+    margin: 8px;
+  }
+
+  &:hover .btn__label {
+    color: $accentColor;
+    transition: 500ms;
+  }
+
+  &:hover .btn__icon {
+    transform: scale(1.1);
+    transition: 500ms;
+    filter: drop-shadow(2px 2px 4px rgba(255, 62, 121, 0.5));
+  }
+
+  .btn__icon {
+    background-color: $accentColor;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    &-burger {
+      background-image: url("../img/burger.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &-request {
+      background-image: url("../img/checkstatus.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &-repair {
+      background-image: url("../img/repair.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &-chat {
+      background-image: url("../img/chat.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &-profile {
+      background-image: url("../img/profile.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &-call {
+      background-image: url("../img/call.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &-close {
+      background-image: url("../img/close.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &-search {
+      background-image: url("../img/search.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}

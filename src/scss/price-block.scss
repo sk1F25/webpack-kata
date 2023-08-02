@@ -1,0 +1,44 @@
+@import 'vars';
+
+.price-block {
+  padding: 16px 16px 40px 16px;
+
+  @media screen and (min-width: 767px) {
+    padding-left: 24px;
+  }
+
+  @media screen and (min-width: 1120px) {
+    padding-left: 32px;
+  }
+
+  p {
+    @media screen and (min-width: 767px) {
+      width: 421px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+    position: relative;
+
+    &:hover {
+      color: $accentColor;
+    }
+
+    &::after {
+      content: '';
+      background: url(../img/go.svg) no-repeat 50% 50%;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 0;
+      right: -30px;
+    }
+  }
+}

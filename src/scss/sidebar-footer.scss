@@ -1,0 +1,59 @@
+@import 'vars';
+
+.sidebar-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: auto;
+  padding: 0 24px 32px 24px;
+
+  .footer-container {
+    display: flex;
+    gap: 16px;
+  }
+
+  .footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &__email {
+      color: #1B1C21;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+    }
+
+    &__phone {
+      color: #1B1C21;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px;
+      letter-spacing: -0.6px;
+    }
+  }
+
+  .footer-language {
+    padding-top: 24px;
+    display: flex;
+    gap: 7px;
+
+    &__item {
+      color: #1B1C21;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+
+      &--active {
+        color: #7E7E82;
+        pointer-events: none;
+        cursor: default;
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@import 'vars.scss';
+
+.footer {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  padding: 32px 24px 24px;
+
+  box-sizing: border-box;
+
+  color: #7E7E82;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 114.286% */
+  text-align: center;
+
+  background-color: $bgColor;
+  border-top: 1px solid $borderColor;
+
+  @media (min-width: 767px) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 1120px) {
+    margin-left: 306px;
+    padding-left: 32px;
+  }
+
+
+  &__item {
+    @media (min-width: 767px) {
+      width: 33.33%;
+    }
+
+    &--copyright {
+
+      @media (min-width: 767px) {
+        text-align: left;
+      }
+    }
+
+    &--offer {
+
+      @media (min-width: 767px) {
+        text-align: right;
+      }
+    }
+  }
+}
