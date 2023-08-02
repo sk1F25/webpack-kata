@@ -4,8 +4,8 @@
   position: fixed;
   top: 0;
   right: -1000px;
-  height: 100vh;
-  width: 100vh;
+  min-height: 100vh;
+  width: 100%;
   padding-top: 100px;
   background-color: #fff;
   z-index: 10;
@@ -13,6 +13,11 @@
 
   &--open {
     right: 0;
+    height: 100vh;
+  }
+
+  @media screen and (max-height: 768px) {
+    overflow: scroll !important;
   }
 
   @media screen and (min-width: 768px) {
@@ -39,7 +44,12 @@
   }
 
   .feedback-form {
-    padding: 0 32px 0 32px;
+    padding: 0 16px 0 16px;
+    min-width: 288px;
+
+    @media screen and (min-width: 1120px) {
+      padding: 0 32px 0 32px;
+    }
 
     &__item {
       box-sizing: border-box;
