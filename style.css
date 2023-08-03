@@ -902,14 +902,18 @@ template {
   position: fixed;
   top: 0;
   right: -1000px;
-  height: 100vh;
-  width: 100vh;
+  min-height: 100vh;
+  width: 100%;
   padding-top: 100px;
   background-color: #fff;
   z-index: 10;
   transition: right 0.5s ease-out; }
   .modal-feedback--open {
-    right: 0; }
+    right: 0;
+    height: 100vh; }
+  @media screen and (max-height: 768px) {
+    .modal-feedback {
+      overflow: scroll !important; } }
   @media screen and (min-width: 768px) {
     .modal-feedback {
       width: 320px;
@@ -929,7 +933,11 @@ template {
         left: auto;
         top: 32px; } }
   .modal-feedback .feedback-form {
-    padding: 0 32px 0 32px; }
+    padding: 0 16px 0 16px;
+    min-width: 288px; }
+    @media screen and (min-width: 1120px) {
+      .modal-feedback .feedback-form {
+        padding: 0 32px 0 32px; } }
     .modal-feedback .feedback-form__item {
       box-sizing: border-box;
       width: 100%;
@@ -982,14 +990,18 @@ template {
   position: fixed;
   top: 0;
   right: -1000px;
-  height: 100vh;
-  width: 100vh;
+  min-height: 100vh;
+  width: 100%;
   padding-top: 100px;
   background-color: #fff;
   z-index: 10;
   transition: right 0.5s ease-out; }
   .modal-call--open {
-    right: 0; }
+    right: 0;
+    height: 100vh; }
+  @media screen and (max-height: 768px) {
+    .modal-call {
+      overflow: scroll !important; } }
   @media screen and (min-width: 768px) {
     .modal-call {
       width: 320px;
@@ -1009,7 +1021,11 @@ template {
         left: auto;
         top: 32px; } }
   .modal-call .call-form {
-    padding: 0 32px 0 32px; }
+    padding: 0 16px 0 16px;
+    min-width: 288px; }
+    @media screen and (min-width: 1120px) {
+      .modal-call .call-form {
+        padding: 0 32px 0 32px; } }
     .modal-call .call-form__item {
       box-sizing: border-box;
       width: 100%;
